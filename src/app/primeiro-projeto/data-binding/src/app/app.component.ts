@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Olá Mundo!';
+
+  valor: number = 5;
+
+  deletarCiclo: boolean = false;
+
+  //title = 'data-binding';
+
+  mudarValor(){
+    this.valor++;
+  }
+
+  destruirCiclo(){
+    this.deletarCiclo = true;
+  }
+
+
 }
+
+
